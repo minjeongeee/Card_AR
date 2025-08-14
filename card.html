@@ -27,7 +27,7 @@
   </style>
 </head>
 <body>
-  <h1>💐 수형기록카드 AR </h1>
+  <h1>💐 수형기록카드 AR 💐 </h1>
   <p>아래 버튼을 누르면 AR 뷰어로실행</p>
 
   <!-- AR 보기 버튼 -->
@@ -46,7 +46,7 @@
       arLink.href = "OrbitCardGlue_0814.usdz";
       arLink.setAttribute("rel", "ar");
     } else if (isAndroid) {
-      const glbFile = location.origin + location.pathname.replace(/\/[^\/]*$/, '/ARCARD_0811.glb');
+      const glbFile = location.origin + location.pathname.replace(/\/[^\/]*$/, '/ARCARD_0814.glb');
       arLink.href =
         `intent://arvr.google.com/scene-viewer/1.0?file=${encodeURIComponent(glbFile)}&mode=ar_preferred#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=${encodeURIComponent(glbFile)};end;`;
     } else {
@@ -57,6 +57,7 @@
   </script>
 </body>
 </html>
+
 
 
 
